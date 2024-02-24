@@ -1,0 +1,64 @@
+.nav-menu {
+  background: #131619;
+  display: flex;
+  padding-top: 24px;
+  padding-left: 32px;
+  padding-right: 38px;
+  justify-content: space-between;
+  padding-bottom: 26px;
+  align-items: center;
+  min-height: 90px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 61px;
+  }
+  &__item a {
+    position: relative;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 29%; /* Располагаем точку по вертикали в середине ссылки */
+      right: -9px; /* Отодвигаем точку вправо от ссылки */
+      width: 5px; /* Размер точки */
+      height: 5px; /* Размер точки */
+      background-color: #fff; /* Цвет точки */
+      border-radius: 50%; /* Делаем круглую форму точки */
+      opacity: 0; /* Начальная прозрачность точки (она не видна) */
+      transition: opacity 0.3s; /* Добавляем плавный переход для анимации */
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  &__button {
+    border-radius: 30px;
+    width: 123px;
+    height: 38px;
+    background: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000;
+    margin-right: 39px;
+  }
+  &__burger {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+  }
+}

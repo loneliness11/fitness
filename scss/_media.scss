@@ -1,0 +1,94 @@
+// nav-menu
+@media (max-width: 898px) {
+  .nav-menu {
+    flex-wrap: wrap;
+  }
+  .nav-menu__list {
+    order: 1;
+    flex-basis: 100%;
+    margin-top: 11px;
+    gap: 20px;
+  }
+}
+@media (max-width: 414px) {
+  .nav-menu {
+    &__logo img {
+      width: 100px;
+    }
+    &__button {
+      width: 106px;
+      margin-right: 0;
+    }
+  }
+}
+// ////////////////////////////////////////////////////////////////////
+// crossfit
+@media (max-width: 738px) {
+  .crossfit {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  .crossfit__descr::before {
+    margin-right: 10px !important;
+  }
+  .crossfit__descr {
+    padding-left: 15px !important;
+  }
+}
+// ////////////////////////////////////////////////////////////////////
+// power  & start
+@media (max-width: 1147px) {
+  .power__img,
+  .start__img {
+    max-width: 40%;
+    height: auto;
+    margin-block: 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  .power {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__items {
+      flex-direction: column-reverse;
+    }
+    &__text {
+      margin-top: 35px;
+    }
+  }
+  .start {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    &__text {
+      margin-top: 35px;
+    }
+    &__items {
+      flex-direction: column-reverse !important;
+    }
+  }
+}
+@media (max-width: 575px) {
+  .power__img,
+  .start__img {
+    max-width: 55%;
+  }
+}
+// ---------------------------------------------------------------------------------------------
+// advantages
+@media (max-width: 1280px) {
+  .advantages__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .advantages__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 378px) {
+  .advantages__items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

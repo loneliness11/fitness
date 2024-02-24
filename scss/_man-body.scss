@@ -1,0 +1,20 @@
+.man-body {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: url("../images/man-body-bg.png") center/cover no-repeat;
+  padding-left: 40px;
+  padding-right: 40px;
+  &__wrapper {
+    position: relative;
+    // background: url("../images/play-video.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+  }
+}

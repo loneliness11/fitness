@@ -1,0 +1,15 @@
+.start {
+  padding-left: 59px;
+  background-color: #131619;
+  &__items {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  &__title {
+    max-width: 365px;
+  }
+  &__img {
+    margin-block: 0;
+    margin-block-start: -65px;
+  }
+}

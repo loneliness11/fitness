@@ -1,0 +1,33 @@
+.advantages {
+  position: relative;
+  background-color: #000;
+  padding-top: 70px;
+  padding-bottom: 140px;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 60px;
+  }
+  &__descr {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+  }
+  &__img {
+    position: relative;
+    height: 140px;
+    margin-bottom: 33px;
+  }
+  &__item {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url("../images/advantages/arrowsvg.svg") 100% 0/80px no-repeat;
+  }
+}

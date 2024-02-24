@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+:root {
+  --font-family: "Heebo", sans-serif;
+  --second-family: "Yantramanav", sans-serif;
+  --third-family: "Roboto", sans-serif;
+  --font3: "Font Awesome 5 Brands", sans-serif;
+  --font4: "Inter", sans-serif;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+body,
+h1,
+h2,
+p,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+// body {
+//   background-color: #000;
+// }
+@import "variables";
+@import "nav-menu";
+@import "crossfit";
+@import "power";
+@import "start";
+@import "advantages";
+@import "man-body";
+@import "defolt";
+@import "join";
+@import "media";
